@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WolfPipe'
-  s.version          = '0.1.2'
+  s.version          = '1.0'
   s.summary          = 'A simple implementation of the forward pipe operator.'
 
   s.homepage         = 'https://github.com/wolfmcnally/WolfPipe'
