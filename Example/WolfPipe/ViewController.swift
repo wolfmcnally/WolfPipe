@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  WolfPipe
 //
-//  Created by ironwolf on 09/05/2018.
-//  Copyright (c) 2018 ironwolf. All rights reserved.
+//  Created by Wolf McNally on 09/05/2018.
+//  Copyright © 2018 Wolf McNally. All rights reserved.
 //
 
 import UIKit

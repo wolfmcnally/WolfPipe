@@ -1,6 +1,6 @@
 # WolfPipe
 
-[![CI Status](https://img.shields.io/travis/ironwolf/WolfPipe.svg?style=flat)](https://travis-ci.org/ironwolf/WolfPipe)
+[![CI Status](https://img.shields.io/travis/wolfmcnally/WolfPipe.svg?style=flat)](https://travis-ci.org/wolfmcnally/WolfPipe)
 [![Version](https://img.shields.io/cocoapods/v/WolfPipe.svg?style=flat)](https://cocoapods.org/pods/WolfPipe)
 [![License](https://img.shields.io/cocoapods/l/WolfPipe.svg?style=flat)](https://cocoapods.org/pods/WolfPipe)
 [![Platform](https://img.shields.io/cocoapods/p/WolfPipe.svg?style=flat)](https://cocoapods.org/pods/WolfPipe)
@@ -22,7 +22,7 @@ pod 'WolfPipe'
 
 ## Author
 
-ironwolf, wolf@wolfmcnally.com
+Wolf McNally, wolf@wolfmcnally.com
 
 ## License
 

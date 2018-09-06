@@ -1,0 +1,6 @@
+framework module Pods_WolfPipe_Example {
+  umbrella header "Pods-WolfPipe_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
