@@ -39,7 +39,7 @@ public func filter<E, C>(_ isIncluded: @escaping (E) -> Bool) -> (C) -> C where 
     return { $0.filter(isIncluded) }
 }
 
-/// Curried version of `filter`, taking a throwing functor.
+/// Curried version of `filter`, taking a throwing closure.
 public func filter<E, C>(_ isIncluded: @escaping (E) throws -> Bool) rethrows -> (C) throws -> C where C: RangeReplaceableCollection, C.Element == E {
     return { try $0.filter(isIncluded) }
 }
@@ -49,22 +49,32 @@ public func sorted<E>(_ a: [E]) -> [E] where E: Comparable {
     return a.sorted()
 }
 
-/// Curried version of `sorted` for `Array`, taking a custom compare functor.
+/// Curried version of `sorted` for `Array`, taking a custom compare closure.
 public func sorted<E>(_ by: @escaping (E, E) -> Bool) -> ([E]) -> [E] {
     return { $0.sorted(by: by) }
 }
 
-/// Curried version or `sorted` for `Array`, taking a custom throwing compare functor.
+/// Curried version or `sorted` for `Array`, taking a custom throwing compare closure.
 public func sorted<E>(_ by: @escaping (E, E) throws -> Bool) rethrows -> ([E]) throws -> [E] {
     return { try $0.sorted(by: by) }
 }
 
 /// Curried version of `map`.
-public func map<E1, E2, S>(_ transform: @escaping (E1) -> E2) -> (S) -> [E2] where S: Sequence, S.Element == E1 {
+public func map<S: Sequence, T>(_ transform: @escaping (S.Element) -> T) -> (S) -> [T] {
     return { $0.map(transform) }
 }
 
-/// Curried version of `map`, taking a throwing functor.
-public func map<E1, E2, S>(_ transform: @escaping (E1) throws -> E2) rethrows -> (S) throws -> [E2] where S: Sequence, S.Element == E1 {
+/// Curried version of `map`, taking a throwing closure.
+public func map<S: Sequence, T>(_ transform: @escaping (S.Element) throws -> T) rethrows -> (S) throws -> [T] {
     return { try $0.map(transform) }
+}
+
+/// Curried version of `reduce`
+public func reduce<S: Sequence, T>(_ initialResult: T, _ nextPartialResult: @escaping (T, S.Element) -> T) -> (S) -> T {
+    return { $0.reduce(initialResult, nextPartialResult) }
+}
+
+/// Curried version of `reduce`, taking a throwing closure
+public func reduce<S: Sequence, T>(_ initialResult: T, _ nextPartialResult: @escaping (T, S.Element) throws -> T) rethrows -> (S) throws -> T {
+    return { try $0.reduce(initialResult, nextPartialResult) }
 }

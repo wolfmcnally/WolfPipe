@@ -40,11 +40,13 @@ class Tests: XCTestCase {
         }
 
         let a = [1, 2, 3]
-        //a.append(4).append(5) // Doesn't work
+
         let b = a |> append(4) |> append(5)
         XCTAssert(b == [1, 2, 3, 4, 5])
+
         let c = b |> filter({ $0 > 2 })
         XCTAssert(c == [3, 4, 5])
+
         let d = try! b |> filter(filterOrThrow)
         XCTAssert(d == [3, 4, 5])
     }
@@ -54,12 +56,16 @@ class Tests: XCTestCase {
             if a > 100 || b > 100 { throw TestError() }
             return a < b
         }
+
         let a = [5, 8, 2, 7]
+
         let b = a |> sorted
-        let c = a |> sorted( > )
-        let d = try! a |> sorted(compareOrThrow)
         XCTAssert(b == [2, 5, 7, 8])
+
+        let c = a |> sorted( > )
         XCTAssert(c == [8, 7, 5, 2])
+
+        let d = try! a |> sorted(compareOrThrow)
         XCTAssert(d == [2, 5, 7, 8])
     }
 
@@ -70,9 +76,26 @@ class Tests: XCTestCase {
         }
 
         let a = [1, 2, 3, 4]
+
         let b = a |> map({ Double($0) * 1.5 })
-        let c = try! a |> map(multiplyOrThrow)
         XCTAssert(b == [1.5, 3.0, 4.5, 6.0])
+
+        let c = try! a |> map(multiplyOrThrow)
         XCTAssert(c == [1.5, 3.0, 4.5, 6.0])
+    }
+
+    func testReduce() {
+        func addOrThrow(a: Int, b: Int) throws -> Int {
+            if a > 100 || b > 100 { throw TestError() }
+            return a + b
+        }
+
+        let a = [1, 2, 3, 4]
+
+        let b = a |> reduce(0, { $0 + $1 })
+        XCTAssert(b == 10)
+
+        let c = try! a |> reduce(0, addOrThrow)
+        XCTAssert(c == 10)
     }
 }
