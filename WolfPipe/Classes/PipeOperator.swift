@@ -3,7 +3,7 @@
 //  WolfPipe
 //
 //  Created by Wolf McNally on 09/05/2018.
-//  Copyright © 2018 Wolf McNally. All rights reserved.
+//  Copyright © 2018 Wolf McNally.
 //
 
 import Foundation
