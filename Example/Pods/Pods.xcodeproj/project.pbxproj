@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		036369B72140F06A00DD8D33 /* PipeCompatibleFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036369B52140F00700DD8D33 /* PipeCompatibleFunctions.swift */; };
-		2A29728EE95445C1168CE0A41B7A51B0 /* WolfPipe-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F052D8EB3DEECC50857DABEFA3D91E0 /* WolfPipe-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A29728EE95445C1168CE0A41B7A51B0 /* WolfPipe-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E28A7C0615864F17EAA78E7765ED653 /* WolfPipe-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D0C4C4772E5FB7FDED2D27837548FAE /* WolfPipe-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DC9A4158B88046197165F900AB8872 /* WolfPipe-dummy.m */; };
 		5939F0F9CC9304DB4F38E5DE00EFB74F /* Pods-WolfPipe_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AE32A9997BEBA99D6337430DBD5451 /* Pods-WolfPipe_Example-dummy.m */; };
-		69B96EDD9EDFEEAEE94016139E0D1300 /* WolfPipe-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E640D1FF7E377CEDDA70626CCDF934E /* WolfPipe-dummy.m */; };
 		7F592652E4B6FF2BC43566E456CEF88E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		9722167CD4F00320AB24187483A1C759 /* PipeCompatibleFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3741266C30099CF54B3A6A45C7BFDD /* PipeCompatibleFunctions.swift */; };
 		9FA27E37821D2178770905ABED448DA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		A6C6531EF56E54115B5906EB4FF18C5C /* Pods-WolfPipe_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C2DF64821618BD8CF306344D22BE6AF3 /* Pods-WolfPipe_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6D098DF4B07A1DAD0B09F208EAB4667 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		A931DE62C3583A42C517A515EAF6F634 /* Pods-WolfPipe_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8DE458B36875BDB39858F5A3221566 /* Pods-WolfPipe_Tests-dummy.m */; };
+		C41E1ED203238BDC1FF5C705ED2F58E0 /* PipeOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4E9C2F8BD07D22C2A31B4F2E54BFC4 /* PipeOperator.swift */; };
 		CB2C9E95629768A8E262C9C8969E5EA6 /* Pods-WolfPipe_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16178F2AD7350E570D3E9823931444C6 /* Pods-WolfPipe_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3FE1CAE8C58576F55B2122784BEEE54 /* PipeOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB04C82E843CE63E5DBC2CBEDC64DC6 /* PipeOperator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,40 +38,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		036369B52140F00700DD8D33 /* PipeCompatibleFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PipeCompatibleFunctions.swift; path = WolfPipe/Classes/PipeCompatibleFunctions.swift; sourceTree = "<group>"; };
-		0867525175F9072479CB52A9B4F82AD4 /* WolfPipe.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WolfPipe.xcconfig; sourceTree = "<group>"; };
 		0E12758C0972DCC686223A201BED7193 /* Pods-WolfPipe_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WolfPipe_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		11961A63269C076A35F4863639C57698 /* Pods-WolfPipe_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WolfPipe_Example.release.xcconfig"; sourceTree = "<group>"; };
 		16178F2AD7350E570D3E9823931444C6 /* Pods-WolfPipe_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WolfPipe_Tests-umbrella.h"; sourceTree = "<group>"; };
+		28CA417CA1A4729B78301CFA23C6206C /* WolfPipe.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WolfPipe.xcconfig; sourceTree = "<group>"; };
+		2E28A7C0615864F17EAA78E7765ED653 /* WolfPipe-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WolfPipe-umbrella.h"; sourceTree = "<group>"; };
 		3C9E22EF5908ECAD3F15E2768AA21066 /* Pods-WolfPipe_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WolfPipe_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4EBC4FA605917535C0088E0C6B8053B5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		50DC9A4158B88046197165F900AB8872 /* WolfPipe-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WolfPipe-dummy.m"; sourceTree = "<group>"; };
 		5D91F9F815C73A3EDBABFFBB476DFD96 /* Pods-WolfPipe_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WolfPipe_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		5E640D1FF7E377CEDDA70626CCDF934E /* WolfPipe-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WolfPipe-dummy.m"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6BAA782F61AB897ED9C6E6EE319669B7 /* Pods-WolfPipe_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WolfPipe_Example.modulemap"; sourceTree = "<group>"; };
-		7311124EFDDB7466BC8D4F5F4CD64367 /* WolfPipe.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WolfPipe.modulemap; sourceTree = "<group>"; };
+		6E4E9C2F8BD07D22C2A31B4F2E54BFC4 /* PipeOperator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PipeOperator.swift; path = WolfPipe/Classes/PipeOperator.swift; sourceTree = "<group>"; };
+		7111BA117F4E97299BB72D6E1C2C2441 /* WolfPipe.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WolfPipe.modulemap; sourceTree = "<group>"; };
 		76E7D2A637E5908656485C3FEBDB5BE5 /* Pods-WolfPipe_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WolfPipe_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		77AE32A9997BEBA99D6337430DBD5451 /* Pods-WolfPipe_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WolfPipe_Example-dummy.m"; sourceTree = "<group>"; };
 		7E8DE458B36875BDB39858F5A3221566 /* Pods-WolfPipe_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WolfPipe_Tests-dummy.m"; sourceTree = "<group>"; };
-		7F052D8EB3DEECC50857DABEFA3D91E0 /* WolfPipe-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WolfPipe-umbrella.h"; sourceTree = "<group>"; };
 		808E912327A2B55A5E3E1135CF12A035 /* Pods-WolfPipe_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WolfPipe_Tests.modulemap"; sourceTree = "<group>"; };
-		830D6F7495235BD7849158EC8F5ABA10 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		8AA77F324C010FFB3F096812A7CFAB42 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8CBB05972A179E9122FA16A017DE6EA8 /* WolfPipe.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = WolfPipe.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		866FBA5590039596C8AD6C074DBCC331 /* WolfPipe-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WolfPipe-prefix.pch"; sourceTree = "<group>"; };
 		8F593CE114962F944CF3DBD8B349EFB7 /* Pods-WolfPipe_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WolfPipe_Tests-resources.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9AF1576A966E95E5C8482DF1757B11E8 /* Pods-WolfPipe_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WolfPipe_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A52F5F29858E7744C29747BC66D2127F /* Pods-WolfPipe_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WolfPipe_Example-resources.sh"; sourceTree = "<group>"; };
+		AE4DA8A71F036A94166C8E5537AE81E4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		B0ACB8192A3C5C493ABBC13F28A44FB7 /* Pods-WolfPipe_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WolfPipe_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		B4C81D256380E50C46481B4E56BC98C2 /* Pods-WolfPipe_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WolfPipe_Example-frameworks.sh"; sourceTree = "<group>"; };
+		B539AD9D8E130D717E5D517141DD8222 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA3741266C30099CF54B3A6A45C7BFDD /* PipeCompatibleFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PipeCompatibleFunctions.swift; path = WolfPipe/Classes/PipeCompatibleFunctions.swift; sourceTree = "<group>"; };
 		BB9C404D159880BF697E6AFFCD654586 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BE9B149120B4249C31ABF124A0194389 /* Pods_WolfPipe_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WolfPipe_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C20BB6F5ECCA0F343D7F7E3F2210C205 /* WolfPipe-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WolfPipe-prefix.pch"; sourceTree = "<group>"; };
+		BE9B149120B4249C31ABF124A0194389 /* Pods_WolfPipe_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WolfPipe_Example.framework; path = "Pods-WolfPipe_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2DF64821618BD8CF306344D22BE6AF3 /* Pods-WolfPipe_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WolfPipe_Example-umbrella.h"; sourceTree = "<group>"; };
-		C7BCA8E8E6040BE873B435DBB9EA9E7A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		CDB04C82E843CE63E5DBC2CBEDC64DC6 /* PipeOperator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PipeOperator.swift; path = WolfPipe/Classes/PipeOperator.swift; sourceTree = "<group>"; };
 		D8775A33D0D539FD13DBB93035FEED8C /* Pods-WolfPipe_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WolfPipe_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DC3C9D78A83BA97C1BBDB2B4A9FCFA76 /* WolfPipe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WolfPipe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC6F44A3FD5787028B31516900C37239 /* Pods_WolfPipe_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WolfPipe_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA11F961575A2EACF88840933F91080C /* WolfPipe.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = WolfPipe.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DC3C9D78A83BA97C1BBDB2B4A9FCFA76 /* WolfPipe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WolfPipe.framework; path = WolfPipe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC6F44A3FD5787028B31516900C37239 /* Pods_WolfPipe_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WolfPipe_Tests.framework; path = "Pods-WolfPipe_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04C136A922B69E8B558FCFB2A504AD5 /* Pods-WolfPipe_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WolfPipe_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F3F4629144E856ACCFC2800DAA68D3ED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,34 +153,42 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BAFD89AFBE1877CD2E070FDD63F67274 /* Development Pods */,
+				9AD3223461327F51B49A9E547CA75CEF /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				B152AAE18E71F39C5544F1345B95857F /* Products */,
 				641CD7BEA1692EC05230698BE250330F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		90DBA4D2599838635CC7395B08A8999C /* WolfPipe */ = {
+		9AD3223461327F51B49A9E547CA75CEF /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CDB04C82E843CE63E5DBC2CBEDC64DC6 /* PipeOperator.swift */,
-				036369B52140F00700DD8D33 /* PipeCompatibleFunctions.swift */,
-				CC803657B3459A01955A34AE76C76ADC /* Pod */,
-				A875E7D5DE9B979BD1ADFF2A0CEEEB7F /* Support Files */,
+				9CC09DAEFE38199255FFCB82C116C3B5 /* WolfPipe */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		9CC09DAEFE38199255FFCB82C116C3B5 /* WolfPipe */ = {
+			isa = PBXGroup;
+			children = (
+				BA3741266C30099CF54B3A6A45C7BFDD /* PipeCompatibleFunctions.swift */,
+				6E4E9C2F8BD07D22C2A31B4F2E54BFC4 /* PipeOperator.swift */,
+				BE87B10FF4290B238215A8A3C42FBB66 /* Pod */,
+				B0CF5BFA8379CE9E7EE8D08BE64CA8FD /* Support Files */,
 			);
 			name = WolfPipe;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		A875E7D5DE9B979BD1ADFF2A0CEEEB7F /* Support Files */ = {
+		B0CF5BFA8379CE9E7EE8D08BE64CA8FD /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				8AA77F324C010FFB3F096812A7CFAB42 /* Info.plist */,
-				7311124EFDDB7466BC8D4F5F4CD64367 /* WolfPipe.modulemap */,
-				0867525175F9072479CB52A9B4F82AD4 /* WolfPipe.xcconfig */,
-				5E640D1FF7E377CEDDA70626CCDF934E /* WolfPipe-dummy.m */,
-				C20BB6F5ECCA0F343D7F7E3F2210C205 /* WolfPipe-prefix.pch */,
-				7F052D8EB3DEECC50857DABEFA3D91E0 /* WolfPipe-umbrella.h */,
+				B539AD9D8E130D717E5D517141DD8222 /* Info.plist */,
+				7111BA117F4E97299BB72D6E1C2C2441 /* WolfPipe.modulemap */,
+				28CA417CA1A4729B78301CFA23C6206C /* WolfPipe.xcconfig */,
+				50DC9A4158B88046197165F900AB8872 /* WolfPipe-dummy.m */,
+				866FBA5590039596C8AD6C074DBCC331 /* WolfPipe-prefix.pch */,
+				2E28A7C0615864F17EAA78E7765ED653 /* WolfPipe-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/WolfPipe";
@@ -196,14 +204,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BAFD89AFBE1877CD2E070FDD63F67274 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				90DBA4D2599838635CC7395B08A8999C /* WolfPipe */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,12 +212,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CC803657B3459A01955A34AE76C76ADC /* Pod */ = {
+		BE87B10FF4290B238215A8A3C42FBB66 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				830D6F7495235BD7849158EC8F5ABA10 /* LICENSE */,
-				C7BCA8E8E6040BE873B435DBB9EA9E7A /* README.md */,
-				8CBB05972A179E9122FA16A017DE6EA8 /* WolfPipe.podspec */,
+				4EBC4FA605917535C0088E0C6B8053B5 /* LICENSE */,
+				AE4DA8A71F036A94166C8E5537AE81E4 /* README.md */,
+				DA11F961575A2EACF88840933F91080C /* WolfPipe.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -264,7 +264,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E327E87A09D1F68AD7923A57E7CF9A0A /* Build configuration list for PBXNativeTarget "WolfPipe" */;
 			buildPhases = (
-				88A046A4CE2129F6664709797FA29D9E /* Sources */,
+				C94B14DF9A73C6E90CD1F8F4BA7F89B3 /* Sources */,
 				1B109D1B20A301DEECE21DE623862D8C /* Frameworks */,
 				8EA168CCE841CD8749C1143CF7D4AC75 /* Headers */,
 			);
@@ -320,12 +320,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1000;
-				TargetAttributes = {
-					E7BCCDA81EF90B8A4B87317EFFB51FEB = {
-						LastSwiftMigration = 1000;
-					};
-				};
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -355,21 +350,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		88A046A4CE2129F6664709797FA29D9E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D3FE1CAE8C58576F55B2122784BEEE54 /* PipeOperator.swift in Sources */,
-				036369B72140F06A00DD8D33 /* PipeCompatibleFunctions.swift in Sources */,
-				69B96EDD9EDFEEAEE94016139E0D1300 /* WolfPipe-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B6B8E2D93768E1EEDC9909DBB431C162 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A931DE62C3583A42C517A515EAF6F634 /* Pods-WolfPipe_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C94B14DF9A73C6E90CD1F8F4BA7F89B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9722167CD4F00320AB24187483A1C759 /* PipeCompatibleFunctions.swift in Sources */,
+				C41E1ED203238BDC1FF5C705ED2F58E0 /* PipeOperator.swift in Sources */,
+				2D0C4C4772E5FB7FDED2D27837548FAE /* WolfPipe-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,7 +391,6 @@
 			baseConfigurationReference = 5D91F9F815C73A3EDBABFFBB476DFD96 /* Pods-WolfPipe_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -422,7 +416,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -431,7 +424,7 @@
 		};
 		3FBFAE8C2A8AFF91B9DE9572B1674F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0867525175F9072479CB52A9B4F82AD4 /* WolfPipe.xcconfig */;
+			baseConfigurationReference = 28CA417CA1A4729B78301CFA23C6206C /* WolfPipe.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -579,7 +572,6 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
@@ -589,7 +581,6 @@
 			baseConfigurationReference = 11961A63269C076A35F4863639C57698 /* Pods-WolfPipe_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -614,7 +605,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -624,7 +614,7 @@
 		};
 		B6F74F90A23B20742EA4C8B6FB448FC0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0867525175F9072479CB52A9B4F82AD4 /* WolfPipe.xcconfig */;
+			baseConfigurationReference = 28CA417CA1A4729B78301CFA23C6206C /* WolfPipe.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
