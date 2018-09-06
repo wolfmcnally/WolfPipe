@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'WolfPipe_Example' do
+  pod 'WolfPipe', :path => '../'
+
+  target 'WolfPipe_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
