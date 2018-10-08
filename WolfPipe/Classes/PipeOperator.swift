@@ -25,13 +25,23 @@
 import Foundation
 
 infix operator |> : PipeForwardPrecedence
+infix operator <| : PipeBackwardPrecedence
 
 precedencegroup PipeForwardPrecedence {
     associativity: left
+    higherThan: PipeBackwardPrecedence
+}
+
+precedencegroup PipeBackwardPrecedence {
+    associativity: right
     higherThan: ComparisonPrecedence
     lowerThan: NilCoalescingPrecedence
 }
 
 public func |> <A, B>(lhs: A, rhs: (A) throws -> B) rethrows -> B {
     return try rhs(lhs)
+}
+
+@discardableResult public func <| <A, B>(lhs: (A) throws -> B, rhs: A) rethrows -> B {
+    return try lhs(rhs)
 }
