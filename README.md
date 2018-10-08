@@ -5,11 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/WolfPipe.svg?style=flat)](https://cocoapods.org/pods/WolfPipe)
 [![Platform](https://img.shields.io/cocoapods/p/WolfPipe.svg?style=flat)](https://cocoapods.org/pods/WolfPipe)
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
+A simple implementation of the forward and backward pipe operators.
 
 ## Installation
 

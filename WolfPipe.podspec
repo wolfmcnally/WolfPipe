@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'WolfPipe'
-  s.version          = '1.0.3'
-  s.summary          = 'A simple implementation of the forward pipe operator.'
+  s.version          = '1.0.4'
+  s.summary          = 'A simple implementation of the forward and backward pipe operators.'
 
   s.homepage         = 'https://github.com/wolfmcnally/WolfPipe'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
