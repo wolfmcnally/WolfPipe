@@ -1,8 +1,8 @@
 //
-//  PipeOperator.swift
+//  EffectfulComposeOperator.swift
 //  WolfPipe
 //
-//  Created by Wolf McNally on 09/05/2018.
+//  Created by Wolf McNally on 11/6/18.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -24,24 +24,21 @@
 
 import Foundation
 
-infix operator |> : ForwardApplicationPrecedence
-infix operator <| : BackwardApplicationPrecedence
+infix operator >=> : EffectfulCompositionPrecedence
 
-precedencegroup ForwardApplicationPrecedence {
+precedencegroup EffectfulCompositionPrecedence {
     associativity: left
-    higherThan: BackwardApplicationPrecedence
+    higherThan: ForwardApplicationPrecedence
 }
 
-precedencegroup BackwardApplicationPrecedence {
-    associativity: right
-    higherThan: ComparisonPrecedence
-    lowerThan: NilCoalescingPrecedence
-}
-
-public func |> <A, B>(lhs: A, rhs: (A) throws -> B) rethrows -> B {
-    return try rhs(lhs)
-}
-
-@discardableResult public func <| <A, B>(lhs: (A) throws -> B, rhs: A) rethrows -> B {
-    return try lhs(rhs)
-}
+//    func >=> <A, B, C>(
+//        _ f: @escaping (A) -> (B, [String]),
+//        _ g: @escaping (B) -> (C, [String])
+//        ) -> (A) -> (C, [String]) {
+//
+//        return { a in
+//            let (b, logs) = f(a)
+//            let (c, moreLogs) = g(b)
+//            return (c, logs + moreLogs)
+//        }
+//    }

@@ -77,3 +77,13 @@ public func reduce<S: Sequence, T>(_ initialResult: T, _ nextPartialResult: @esc
 public func reduce<S: Sequence, T>(_ initialResult: T, _ nextPartialResult: @escaping (T, S.Element) throws -> T) rethrows -> (S) throws -> T {
     return { try $0.reduce(initialResult, nextPartialResult) }
 }
+
+public func joined(separator: String) -> (_ s: [String]) -> String {
+    return { s in
+        return s.joined(separator: separator)
+    }
+}
+
+public func joined(_ s: [String]) -> String {
+    return s |> joined(separator: "")
+}
