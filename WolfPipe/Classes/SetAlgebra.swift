@@ -1,8 +1,8 @@
 //
-//  EffectfulComposeOperator.swift
+//  SetAlgebra.swift
 //  WolfPipe
 //
-//  Created by Wolf McNally on 11/6/18.
+//  Created by Wolf McNally on 11/16/18.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -22,21 +22,26 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-infix operator >=> : EffectfulCompositionPrecedence
-
-precedencegroup EffectfulCompositionPrecedence {
-    associativity: left
-    higherThan: ForwardApplicationPrecedence
+public func update<T: SetAlgebra>(_ e: T.Element) -> (T) -> T {
+    return { var t = $0; t.update(with: e); return t }
 }
 
-//    func >=> <A, B, C>(
-//        _ f: @escaping (A) -> (B, [String]),
-//        _ g: @escaping (B) -> (C, [String])
-//        ) -> (A) -> (C, [String]) {
-//
-//        return { a in
-//            let (b, logs) = f(a)
-//            let (c, moreLogs) = g(b)
-//            return (c, logs + moreLogs)
-//        }
-//    }
+public func remove<T: SetAlgebra>(_ e: T.Element) -> (T) -> T {
+    return { var t = $0; t.remove(e); return t }
+}
+
+public func union<T: SetAlgebra>(_ s: T) -> (T) -> T {
+    return { $0.union(s) }
+}
+
+public func intersection<T: SetAlgebra>(_ s: T) -> (T) -> T {
+    return { $0.intersection(s) }
+}
+
+public func symmetricDifference<T: SetAlgebra>(_ s: T) -> (T) -> T {
+    return { $0.symmetricDifference(s) }
+}
+
+public func subtracting<T: SetAlgebra>(_ s: T) -> (T) -> T {
+    return { $0.subtracting(s) }
+}

@@ -22,9 +22,6 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import Foundation
-
-
 infix operator >>> : ForwardCompositionPrecedence
 
 precedencegroup ForwardCompositionPrecedence {
@@ -38,6 +35,22 @@ public func >>> <A, B, C>(f: @escaping (A) -> B, g: @escaping (B) -> C) -> ((A) 
 
 public func >>> <A, B, C>(f: @escaping (A) throws -> B, g: @escaping (B) throws -> C) -> ((A) throws -> C) {
     return { try g(f($0)) }
+}
+
+
+infix operator <<< : BackwardsCompositionPrecedence
+
+precedencegroup BackwardsCompositionPrecedence {
+    associativity: right
+    higherThan: ForwardApplicationPrecedence
+}
+
+func <<< <A, B, C>(g: @escaping (B) -> C, f: @escaping (A) -> B) -> (A) -> C {
+    return { x in g(f(x)) }
+}
+
+func <<< <A, B, C>(g: @escaping (B) throws -> C, f: @escaping (A) throws -> B) -> (A) throws -> C {
+    return { x in try g(f(x)) }
 }
 
 

@@ -22,8 +22,6 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import Foundation
-
 /// Curried version of `append`.
 public func append<E, C>(_ e: E) -> (C) -> C where C: RangeReplaceableCollection, C.Element == E {
     return { c in
