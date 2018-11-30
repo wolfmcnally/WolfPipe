@@ -66,6 +66,26 @@ public func map<S: Sequence, T>(_ transform: @escaping (S.Element) throws -> T) 
     return { try $0.map(transform) }
 }
 
+/// Curried version of `map` which operates on an optional.
+func map<A, B>(_ f: @escaping (A) -> B) -> (A?) -> B? {
+    return {
+        switch $0 {
+        case let .some(a): return .some(f(a))
+        case .none:        return .none
+        }
+    }
+}
+
+/// Curried version of `map` which operates on an optional and takes a throwing closure.
+func map<A, B>(_ f: @escaping (A) throws -> B) rethrows -> (A?) throws -> B? {
+    return {
+        switch $0 {
+        case let .some(a): return try .some(f(a))
+        case .none:        return .none
+        }
+    }
+}
+
 /// Curried version of `reduce`
 public func reduce<S: Sequence, T>(_ initialResult: T, _ nextPartialResult: @escaping (T, S.Element) -> T) -> (S) -> T {
     return { $0.reduce(initialResult, nextPartialResult) }
@@ -88,4 +108,9 @@ public func joined(_ s: [String]) -> String {
 
 public func rawValue<T: RawRepresentable>(_ t: T) -> T.RawValue {
     return t.rawValue
+}
+
+/// The identity funtion.
+func identity<A>(_ a: A) -> A {
+    return a
 }
