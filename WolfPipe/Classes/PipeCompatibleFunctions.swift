@@ -85,3 +85,7 @@ public func joined(separator: String) -> (_ s: [String]) -> String {
 public func joined(_ s: [String]) -> String {
     return s |> joined(separator: "")
 }
+
+public func rawValue<T: RawRepresentable>(_ t: T) -> T.RawValue {
+    return t.rawValue
+}
