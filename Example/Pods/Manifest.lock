@@ -1,5 +1,5 @@
 PODS:
-  - WolfPipe (0.1.2)
+  - WolfPipe (1.0.7)
 
 DEPENDENCIES:
   - WolfPipe (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  WolfPipe: 4b5adee086a444f00934357f9215336aab8efa50
+  WolfPipe: 1a2cbb23efb14833647a2adcc034468bf82a289e
 
-PODFILE CHECKSUM: dc1fa05d0e240d8980087c74ba288fd0b25fb938
+PODFILE CHECKSUM: 7b2a9f05f28efc292e23190842cbb5a7d9be6d97
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.6.0.beta.2

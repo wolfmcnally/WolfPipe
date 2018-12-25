@@ -40,6 +40,11 @@ public func |> <A, B>(lhs: A, rhs: (A) throws -> B) rethrows -> B {
     return try rhs(lhs)
 }
 
+@discardableResult public func |> <A>(lhs: A, rhs: (A) throws -> Void) rethrows -> A {
+    try rhs(lhs)
+    return lhs
+}
+
 @discardableResult public func <| <A, B>(lhs: (A) throws -> B, rhs: A) rethrows -> B {
     return try lhs(rhs)
 }
