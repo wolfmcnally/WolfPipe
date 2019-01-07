@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'WolfPipe'
-  s.version          = '1.1.0'
+  s.version          = '1.1.1'
   s.summary          = 'An implementation of the forward and backward pipe operators and other functional programming conveniences.'
 
   s.homepage         = 'https://github.com/wolfmcnally/WolfPipe'
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author           = { 'Wolf McNally' => 'wolf@wolfmcnally.com' }
   s.source           = { :git => 'https://github.com/wolfmcnally/WolfPipe.git', :tag => s.version.to_s }
 
-  s.source_files = 'WolfPipe/Classes/**/*'
+  s.source_files = 'Sources/WolfPipe/**/*'
 
   s.swift_version = '4.2'
 
