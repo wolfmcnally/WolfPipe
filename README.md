@@ -7,6 +7,8 @@
 
 A simple implementation of the forward and backward pipe operators.
 
+Also supports Swift Package Manager.
+
 ## Installation
 
 WolfPipe is available through [CocoaPods](https://cocoapods.org). To install
